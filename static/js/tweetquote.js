@@ -166,7 +166,7 @@ var tweetquote = function () {
 		//var html = '<h1><span id="' + textId + '">' + text + '</span></h1>';		
 		var html = '<h3><span id="' + authorId + '">' + '<a href="http://www.twitter.com/' + tweet.from_user + '">' + tweet.from_user + '</a><h4>Dijo :</h4></span></h3>';
 		html += '<h1><span id="' + textId + '">' + text + '</span></h1>';	
-		html += '<h4>El día ' + tweet.created_at + '</h4>'	
+		html += '<h4>' + tweet.created_at + '</h4>'	
 		
 				
 		if( handlerTextParser ) {
