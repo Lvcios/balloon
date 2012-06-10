@@ -1,0 +1,45 @@
+<html>
+	<head>
+		<link href="http://twitter.github.com/bootstrap/assets/css/bootstrap.css" rel="stylesheet">
+		<link href="http://twitter.github.com/bootstrap/assets/css/bootstrap-responsive.css" rel="stylesheet">
+		<title>México dice</title>
+	</head>
+	<body>
+		<div class="carousel slide slid" id="myCarousel">
+			<div class="carousel-inner">
+				<div class="item active" align="center"> 
+					<!--<div class="carousel-caption">-->
+						<h1>México Dice: Un grito a la Democracia</h1>
+					<!--</div>-->
+				</div>
+				{% for tweet in lista_tweets %}
+				<div class="item" align="center">
+					<!--<div class="carousel-caption">-->
+						<p>@{{ tweet.usuario }} dijo:</p>
+						<p>{{ tweet.frase }}</p>
+						<p>El día: {{ tweet.fechahora}}</p>
+					<!--</div>-->
+				</div>
+				{% endfor %}
+			</div>
+			<a data-slide="prev" href="#myCarousel" class="left carousel-control">&lsaquo;</a>
+			<a data-slide="next" href="#myCarousel" class="right carousel-control">&rsaquo;</a>
+		</div>
+		<!--<table class="table table-stripe" align="center">
+			{% for tweet in lista_tweets %}
+			<tr>
+				<td>{{ tweet.usuario }}</td>
+				<td>{{ tweet.frase }}</td>
+				<td>{{ tweet.fechahora}}</td>
+			</tr>
+			{% endfor %}
+		</table>-->
+		
+		<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+		<script src="http://twitter.github.com/bootstrap/assets/js/jquery.js"></script>
+		<script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-carousel.js"></script>
+		<script>$('.carousel').carousel() </script>
+		<script>$('.carousel').carousel({interval:500});</script>
+	</body>
+</html>
+

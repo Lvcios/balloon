@@ -1,0 +1,20 @@
+<html>
+	<head>
+		<title>México dice</title>
+	</head>
+	<body>
+		<table border=1>
+				{% for tweet in lista_tweets %}
+				<tr>
+					<td>@{{ tweet.Usuario }}</td>
+					<td>{{ tweet.Frase }}</td>
+					<td>{{ tweet.FechaHora}}</td>
+				</tr>
+				{% endfor %}
+		</table>
+		
+		
+		
+		
+	</body>
+</html>
