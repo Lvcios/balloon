@@ -14,11 +14,12 @@
 				</div>
 				{% for tweet in lista_tweets %}
 				<div class="item" align="center" >
-					<!--<div class="carousel-caption">-->
+					<img src="img/mexico-1.jpg" alt="Mesas de discusi&oacute;n" width="100%" height="300" />
+					<div class="carousel-caption">
 						<p><h3>@{{ tweet.usuario }}</h3> <h4>dijo:</h4></p>
 						<p><h1>{{ tweet.frase }}</h1></p>
 						<p><h4>El día:</h4> <h3>{{ tweet.fechahora}}</h3></p>
-					<!--</div>-->
+					</div>
 				</div>
 				{% endfor %}
 			</div>
