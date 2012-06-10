@@ -4,7 +4,7 @@
 		<link href="http://twitter.github.com/bootstrap/assets/css/bootstrap-responsive.css" rel="stylesheet">
 		<title>México dice</title>
 	</head>
-	<body>
+	<body valign="center" class="well">
 		<div class="carousel slide slid" id="myCarousel">
 			<div class="carousel-inner">
 				<div class="item active" align="center"> 
@@ -13,7 +13,7 @@
 					<!--</div>-->
 				</div>
 				{% for tweet in lista_tweets %}
-				<div class="item" align="center">
+				<div class="item" align="center" >
 					<!--<div class="carousel-caption">-->
 						<p><h3>@{{ tweet.usuario }}</h3> <h4>dijo:</h4></p>
 						<p><h1>{{ tweet.frase }}</h1></p>
@@ -39,7 +39,7 @@
 		<script src="http://twitter.github.com/bootstrap/assets/js/jquery.js"></script>
 		<script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-carousel.js"></script>
 		<script>$('.carousel').carousel() </script>
-		<script>$('.carousel').carousel({interval:500});</script>
+		<script>$('.carousel').carousel({interval:1000});</script>
 	</body>
 </html>
 
