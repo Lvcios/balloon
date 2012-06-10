@@ -15,15 +15,15 @@
 				{% for tweet in lista_tweets %}
 				<div class="item" align="center">
 					<!--<div class="carousel-caption">-->
-						<p>@{{ tweet.usuario }} dijo:</p>
-						<p>{{ tweet.frase }}</p>
-						<p>El día: {{ tweet.fechahora}}</p>
+						<p><h3>@{{ tweet.usuario }}</h3> <h4>dijo:</h4></p>
+						<p><h1>{{ tweet.frase }}</h1></p>
+						<p><h4>El día:</h4> <h3>{{ tweet.fechahora}}</h3></p>
 					<!--</div>-->
 				</div>
 				{% endfor %}
 			</div>
-			<a data-slide="prev" href="#myCarousel" class="left carousel-control">&lsaquo;</a>
-			<a data-slide="next" href="#myCarousel" class="right carousel-control">&rsaquo;</a>
+			<!--<a data-slide="prev" href="#myCarousel" class="left carousel-control">&lsaquo;</a>
+			<a data-slide="next" href="#myCarousel" class="right carousel-control">&rsaquo;</a>-->
 		</div>
 		<!--<table class="table table-stripe" align="center">
 			{% for tweet in lista_tweets %}
