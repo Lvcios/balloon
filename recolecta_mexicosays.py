@@ -19,7 +19,7 @@ def search(request):
 				for tweets in search:
 					try: #captura tweets
 						t = tuit(id_tweet=tweets.id,usuario=tweets.from_user,frase=tweets.text,fechahora = tweets.created_at)
-						if not tuit.objects.filter(id_tweet=tweets.id) and (len(t.frase)==140):
+						if not tuit.objects.filter(id_tweet=tweets.id) and (len(t.frase)>=100):
 							t.save()
 							print 'Mensaje guardado'
 					except:
