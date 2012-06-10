@@ -37,7 +37,7 @@ var tweetquote = function () {
 		'stripurls'				: 	true, 
 		'stripTwitterTags'	: 	true,
 		'classname'				:  false, 
-		'lang'					: 	"en", // http://en.wikipedia.org/wiki/ISO_639-1
+		'lang'					: 	"es", // http://en.wikipedia.org/wiki/ISO_639-1
 		'animationtype'		:  'fade', 
 		'animationspeed'		:  'slow', 
 		'defaulttext'			:  "Hold up, we're just loading some tweets."
