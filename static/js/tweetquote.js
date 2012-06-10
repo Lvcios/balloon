@@ -163,11 +163,12 @@ var tweetquote = function () {
 			text = text.replace( pattern_tags , '');
 		}
 		
+		
 		if( config.includeauthor ) {
-			html += ' <span id="' + authorId + '">' + '<a href="http://www.twitter.com/' + tweet.from_user + '">' + tweet.from_user + ' Dijo:</a></span>';
+			html += '<h3><span id="' + authorId + '">' + '<a href="http://www.twitter.com/' + tweet.from_user + '">' + tweet.from_user + '</a><h4>Dijo</h4></span></h3>';
 		}
 		
-		var html = '<span id="' + textId + '">' + text + '</span>';
+		var html = '<h1><span id="' + textId + '">' + text + '</span></h1>';
 				
 		if( handlerTextParser ) {
 			return( handlerTextParser( html, tweet ) );
