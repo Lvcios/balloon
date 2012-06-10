@@ -40,7 +40,7 @@ var tweetquote = function () {
 		'lang'					: 	"es", // http://en.wikipedia.org/wiki/ISO_639-1
 		'animationtype'		:  'fade', 
 		'animationspeed'		:  'slow', 
-		'defaulttext'			:  "Hold up, we're just loading some tweets."
+		'defaulttext'			:  "Cargando lo que el pueblo dice"
 	};
 	
 	var rootId = 'tweet_quote', wrapId = 'tweet_quote_wrapper', textId = "tweet_quote_text", authorId = 'tweet_quote_author', rootDom, quoteDom, intId, sinceId, handlerTextParser, handlerQuoteUpdate; 
