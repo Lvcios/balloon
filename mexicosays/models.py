@@ -1,5 +1,5 @@
 from django.db import models
-
+#finalmente no sirvo para nada :(
 # Create your models here.
 class tuit(models.Model):
 	id_tweet = models.CharField(max_length = 50)
