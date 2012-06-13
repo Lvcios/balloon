@@ -16,7 +16,8 @@ urlpatterns = patterns('',
 
     # Uncomment the next line to enable the admin:
     # url(r'^admin/', include(admin.site.urls)),
-    (r'^tweets/$', 'tweetminner.views.tweets'),
+    (r'^tweets/$', 'mexicosays.views.tweets'),
+    (r'^carrusel/$', 'mexicosays.views.carrusel'),
     #(r'^mexicosays/$', 'mexicosays.views.tweets'),
     (r'^mexicosays/$', 'mexicosays.views.mexicosays'),
     
