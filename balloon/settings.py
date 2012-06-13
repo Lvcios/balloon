@@ -136,7 +136,6 @@ INSTALLED_APPS = (
     'django.contrib.sites',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'tweetminner',
     'mexicosays',
     #'kombu.transport.django',
 	#'djcelery',
