@@ -137,6 +137,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'mexicosays',
+    'mexicomustwatch',
     #'kombu.transport.django',
 	#'djcelery',
     # Uncomment the next line to enable the admin:

@@ -20,5 +20,6 @@ urlpatterns = patterns('',
     (r'^carrusel/$', 'mexicosays.views.carrusel'),
     #(r'^mexicosays/$', 'mexicosays.views.tweets'),
     (r'^mexicosays/$', 'mexicosays.views.mexicosays'),
+    (r'^mexicomustwatch/$', 'mexicomustwatch.views.mexicomustwatch'),
     
 )
